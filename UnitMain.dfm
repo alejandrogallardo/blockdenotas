@@ -69,21 +69,26 @@ object MainForm: TMainForm
     end
     object FileNew: TMenuItem
       Caption = '&New'
+      OnClick = FileNewClick
     end
     object FileOpen: TMenuItem
       Caption = '&Open'
+      OnClick = FileOpenClick
     end
     object FileSave: TMenuItem
       Caption = '&Save'
+      OnClick = FileSaveClick
     end
     object FIleSaveAs: TMenuItem
       Caption = 'Save &As'
+      OnClick = FIleSaveAsClick
     end
     object Edit1: TMenuItem
       Caption = '&Edit'
       object Undo1: TMenuItem
         Caption = '&Undo'
         ShortCut = 16474
+        OnClick = Undo1Click
       end
       object N3: TMenuItem
         Caption = '-'
@@ -96,10 +101,12 @@ object MainForm: TMainForm
       object Copy1: TMenuItem
         Caption = '&Copy'
         ShortCut = 16451
+        OnClick = Copy1Click
       end
       object Paste1: TMenuItem
         Caption = '&Paste'
         ShortCut = 16470
+        OnClick = Paste1Click
       end
       object N2: TMenuItem
         Caption = '-'

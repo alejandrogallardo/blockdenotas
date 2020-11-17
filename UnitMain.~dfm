@@ -1,6 +1,6 @@
 object MainForm: TMainForm
-  Left = 347
-  Top = 422
+  Left = 277
+  Top = 208
   Width = 928
   Height = 480
   Caption = 'Alex Pad'
@@ -69,15 +69,19 @@ object MainForm: TMainForm
     end
     object FileNew: TMenuItem
       Caption = '&New'
+      OnClick = FileNewClick
     end
     object FileOpen: TMenuItem
       Caption = '&Open'
+      OnClick = FileOpenClick
     end
     object FileSave: TMenuItem
       Caption = '&Save'
+      OnClick = FileSaveClick
     end
     object FIleSaveAs: TMenuItem
       Caption = 'Save &As'
+      OnClick = FIleSaveAsClick
     end
     object Edit1: TMenuItem
       Caption = '&Edit'
@@ -91,14 +95,17 @@ object MainForm: TMainForm
       object Cut1: TMenuItem
         Caption = 'Cu&t'
         ShortCut = 16472
+        OnClick = Cut1Click
       end
       object Copy1: TMenuItem
         Caption = '&Copy'
         ShortCut = 16451
+        OnClick = Copy1Click
       end
       object Paste1: TMenuItem
         Caption = '&Paste'
         ShortCut = 16470
+        OnClick = Paste1Click
       end
       object N2: TMenuItem
         Caption = '-'
